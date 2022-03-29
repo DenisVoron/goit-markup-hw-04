@@ -174,12 +174,27 @@ img {
 .contact-item :focus {
   color: var(--secondary-txt-cl);
 }
+.contact-item::before {
+  display: block;
+  content: '';
+}
 .hero {
+  max-width: 1600px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 200px;
   padding-bottom: 200px;
 
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-img.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--main-bg-cl);
 }
+
 .hero-title {
   width: 696px;
   margin-left: auto;
@@ -204,6 +219,7 @@ img {
   background-color: var(--secondary-txt-cl);
 }
 
+/*оформлєння інфо-блок*/
 .benefits-list {
   display: flex;
 }
@@ -214,9 +230,26 @@ img {
 .benefits-item:last-child {
   margin-right: 0px;
 }
+.benefits-item::before {
+  display: block;
+  content: '';
 
+  width: 270px;
+  height: 120px;
+
+  background: var(--section-bg-cl);
+  border-radius: 4px;
+}
+.icon-antennа::before {
+  background-image: url(../images/icon/antenna.svg);
+  background-position: center;
+}
+.icon-clock::before {
+  background-image: url();
+}
 .benefits-title {
   margin-bottom: 10px;
+  padding-top: 30px;
 
   font-weight: 700;
   font-size: 14px;
