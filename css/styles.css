@@ -230,6 +230,7 @@ img {
 .benefits-item:last-child {
   margin-right: 0px;
 }
+
 .benefits-item::before {
   display: block;
   content: '';
@@ -237,15 +238,30 @@ img {
   width: 270px;
   height: 120px;
 
+  background-size: contain;
+
   background: var(--section-bg-cl);
   border-radius: 4px;
 }
 .icon-antennа::before {
   background-image: url(../images/icon/antenna.svg);
+  background-repeat: no-repeat;
   background-position: center;
 }
 .icon-clock::before {
-  background-image: url();
+  background-image: url(../images/icon/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .benefits-title {
   margin-bottom: 10px;
@@ -340,6 +356,15 @@ img {
 
   text-align: center;
   letter-spacing: 0.03em;
+}
+.client-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-txt-cl);
 }
 
 /*кнопки фильтр раздел работ*/
