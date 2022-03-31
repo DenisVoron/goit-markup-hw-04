@@ -19,6 +19,8 @@
   /*цвет border*/
   --top-border-cl: #ececec;
   --border-cl: #eeeeee;
+  /*цвет иконок*/
+  --icon-color: #afb1b8;
 }
 
 /*доп шрифт*/
@@ -374,12 +376,22 @@ img {
 .client-icon {
   width: 170px;
   height: 92px;
+  fill: var(--icon-color);
 
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 }
-.client-icon:not(:last-child) {
+.client-icon:hover {
+  fill: var(--secondary-txt-cl);
+  border: 1px solid var(--secondary-txt-cl);
+  cursor: pointer;
+}
+
+/*.client-item:hover {
+  fill: var(--secondary-txt-cl);
+}*/
+.client-item:not(:last-child) {
   margin-right: 30px;
 }
 
