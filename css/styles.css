@@ -180,6 +180,9 @@ img {
   display: block;
   content: '';
 }
+.icon-phone::before {
+  background-image: url(../images/icon/smartphone.svg);
+}
 .hero {
   max-width: 1600px;
   max-height: 600px;
@@ -352,12 +355,21 @@ img {
 }
 
 .team-descr {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
 
   text-align: center;
   letter-spacing: 0.03em;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+.team-icon {
+  width: 20px;
+  height: 20px;
 }
 .client-title {
   margin-bottom: 50px;
@@ -385,12 +397,8 @@ img {
 .client-icon:hover {
   fill: var(--secondary-txt-cl);
   border: 1px solid var(--secondary-txt-cl);
-  cursor: pointer;
 }
 
-/*.client-item:hover {
-  fill: var(--secondary-txt-cl);
-}*/
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
