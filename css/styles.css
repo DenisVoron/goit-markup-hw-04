@@ -160,6 +160,10 @@ img {
   align-items: center;
   margin-left: auto;
 }
+.contact-item{
+  display: flex;
+  align-items: center;
+}
 .contact-item:first-child {
   margin-right: 50px;
 }
@@ -176,13 +180,33 @@ img {
 .contact-item :focus {
   color: var(--secondary-txt-cl);
 }
-.contact-item::before {
+
+/*.contact-link{
+  display: inline-flex;
+Width: 16px;
+Height: 12px;
+}
+.contact-link::before {
   display: block;
   content: '';
+
+  Width: 16px;
+  Height: 12px;
+  background-size: contain;
+  
+  /*background: var(--section-bg-cl);
+  border-radius: 4px;
+}*/
+
+.contact-icon {
+  Width: 16px;
+  Height: 12px;
 }
-.icon-phone::before {
+
+/*.icon-phone::before {
   background-image: url(../images/icon/smartphone.svg);
-}
+}*/
+
 .hero {
   max-width: 1600px;
   max-height: 600px;
@@ -363,11 +387,11 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 /*ссылки соц.сети*/
 .social-list {
   display: flex;
   justify-content: center;
-
 }
 .social-item:not(:last-child) {
   margin-right: 10px;
@@ -387,6 +411,7 @@ img {
  background-color: var(--secondary-txt-cl);
  fill:var(--accent-txt-cl)
 }
+
 .team-icon {
   width: 20px;
   height: 20px;
