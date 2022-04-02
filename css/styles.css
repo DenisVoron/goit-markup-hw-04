@@ -160,9 +160,14 @@ img {
   align-items: center;
   margin-left: auto;
 }
-.contact-item{
+.contact-list .link {
   display: flex;
   align-items: center;
+}
+.contact-list .link:hover,
+.contact-list .link:focus {
+  
+  color: var(--secondary-txt-cl);
 }
 .contact-item:first-child {
   margin-right: 50px;
@@ -176,36 +181,10 @@ img {
   color: var(--primary-txt-cl);
 }
 
-.contact-item :hover,
-.contact-item :focus {
-  color: var(--secondary-txt-cl);
+.contact-list .contact-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
-
-/*.contact-link{
-  display: inline-flex;
-Width: 16px;
-Height: 12px;
-}
-.contact-link::before {
-  display: block;
-  content: '';
-
-  Width: 16px;
-  Height: 12px;
-  background-size: contain;
-  
-  /*background: var(--section-bg-cl);
-  border-radius: 4px;
-}*/
-
-.contact-icon {
-  Width: 16px;
-  Height: 12px;
-}
-
-/*.icon-phone::before {
-  background-image: url(../images/icon/smartphone.svg);
-}*/
 
 .hero {
   max-width: 1600px;
@@ -407,7 +386,8 @@ Height: 12px;
   border-radius: 50px;
   fill: var(--icon-color);
 }
-.social-link:hover{
+.social-link:hover,
+.social-link:focus {
  background-color: var(--secondary-txt-cl);
  fill:var(--accent-txt-cl)
 }
@@ -431,7 +411,8 @@ Height: 12px;
   display: flex;
   justify-content: center;
 }
-.client-icon {
+.client-link {
+  display: inline-flex;
   width: 170px;
   height: 92px;
   fill: var(--icon-color);
@@ -440,7 +421,8 @@ Height: 12px;
   box-sizing: border-box;
   border-radius: 4px;
 }
-.client-icon:hover {
+.client-link:hover,
+.client-link:focus {
   fill: var(--secondary-txt-cl);
   border: 1px solid var(--secondary-txt-cl);
 }
