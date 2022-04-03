@@ -21,6 +21,7 @@
   --border-cl: #eeeeee;
   /*цвет иконок*/
   --icon-color: #afb1b8;
+  --footer-bg-icon: rgba(255, 255, 255, 0.1);
 }
 
 /*доп шрифт*/
@@ -527,6 +528,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
+  color: var(--primary-txt-cl);
 }
 
 /*футер*/
@@ -536,9 +538,46 @@ img {
 
   background-color: var(--main-bg-cl);
 }
-.footer {
+.footer-container {
   display: flex;
 }
+.address-wrapper:not(:last-child) {
+  margin-right: 70px;
+}
+.footer-title {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--accent-txt-cl);
+}
+/*соц мережі футер*/
+.join-list {
+  display: flex;
+}
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--footer-bg-icon);
+  fill: var(--accent-txt-cl);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--secondary-txt-cl);
+}
+
 .container-logo {
   margin-bottom: 20px;
 }
