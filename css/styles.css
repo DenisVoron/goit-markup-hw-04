@@ -226,6 +226,8 @@ img {
   margin-right: auto;
 
   background-color: var(--secondary-txt-cl);
+
+  border: transparent;
 }
 
 /*оформлєння інфо-блок*/
@@ -239,42 +241,30 @@ img {
 .benefits-item:last-child {
   margin-right: 0px;
 }
+.benefits-icon-wrapper {
+  display: flex;
+  justify-content: center;
 
-.benefits-item::before {
-  display: block;
-  content: '';
+  align-items: center;
+  margin-bottom: 30px;
 
   width: 270px;
   height: 120px;
 
-  background-size: contain;
-
   background: var(--section-bg-cl);
   border-radius: 4px;
 }
-.icon-antennа::before {
-  background-image: url(../images/icon/antenna.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+
+.benefits-icon {
+  display: flex;
+  position: center;
+
+  width: 70px;
+  height: 70px;
 }
-.icon-clock::before {
-  background-image: url(../images/icon/clock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-diagram::before {
-  background-image: url(../images/icon/diagram.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.icon-astronaut::before {
-  background-image: url(../images/icon/astronaut.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .benefits-title {
   margin-bottom: 10px;
-  padding-top: 30px;
 
   font-weight: 700;
   font-size: 14px;
@@ -377,11 +367,12 @@ img {
   margin-right: 10px;
 }
 .social-link {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 44px;
   height: 44px;
-  padding: 12px;
 
   align-items: center;
   border-radius: 50px;
@@ -413,9 +404,13 @@ img {
   justify-content: center;
 }
 .client-link {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 170px;
   height: 92px;
+
   fill: var(--icon-color);
 
   border: 1px solid var(--icon-color);
@@ -431,7 +426,10 @@ img {
 .client-item:not(:last-child) {
   margin-right: 30px;
 }
-
+.client-icon {
+  width: 106px;
+  height: 60px;
+}
 /*кнопки фильтр раздел работ*/
 .work-wrapper {
   display: flex;
@@ -443,6 +441,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
@@ -453,8 +452,9 @@ img {
 }
 
 .work-btn {
-  border-color: var(--section-bg-cl);
+  border: transparent;
   border-radius: 4px;
+  padding: 6px 22px;
 
   font-family: var(--main-font);
 
@@ -466,6 +466,7 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--title-txt-cl);
+  background-color: var(--section-bg-cl);
 }
 
 /*фокус-ховер кнопки фильтр*/
@@ -473,14 +474,26 @@ img {
 .work-btn:focus {
   background-color: var(--secondary-txt-cl);
   color: var(--accent-txt-cl);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pointer {
   cursor: pointer;
 }
-.work-container {
-  display: flex;
+.work-link {
+  display: block;
 }
+
+.work-link:hover,
+.work-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .work-list-pic {
   display: flex;
   flex-wrap: wrap;
@@ -540,20 +553,22 @@ img {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .address-wrapper:not(:last-child) {
   margin-right: 70px;
 }
 .footer-title {
-  margin-top: 12px;
   margin-bottom: 20px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-transform: uppercase;
 
   color: var(--accent-txt-cl);
 }
+
 /*соц мережі футер*/
 .join-list {
   display: flex;
@@ -640,3 +655,36 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+
+/*.benefits-item::before {
+  display: block;
+  content: '';
+
+  width: 270px;
+  height: 120px;
+
+  background-size: contain;
+
+}
+.icon-antennа::before {
+  background-image: url(../images/icon/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-clock::before {
+  background-image: url(../images/icon/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-diagram::before {
+  background-image: url(../images/icon/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
